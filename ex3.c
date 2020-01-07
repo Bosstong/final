@@ -11,11 +11,11 @@ int main(int argc,char*argv[]){
     }
     else{
     for(i=1;i<argc;i++,j++){
-        if(*argv[i]>'0'&&*argv[i]<'9')
+        if(*argv[i]>='0'&&*argv[i]<='9')
         {
             a[j]=atof(argv[i]);
             }else{
-               printf("The program needs at least one integer parameter\n");
+               printf("The program has to be an integer format\n");
                return 0;  
             }
     }
